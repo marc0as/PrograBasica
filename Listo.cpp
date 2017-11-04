@@ -1,5 +1,5 @@
 /*Programa 
-Descripción: Programa 
+Descripcion: Programa 
              para
 Salas Mateos Marco Antonio
 PP18042270
@@ -9,7 +9,7 @@ Periodo 18-1
 
 #include <iostream>//Para uso de cout y cin.
 #include <cmath>//Para el uso de M_PI el valor de Pi, pow(variable, potencia)
-#include <windows.h>//Para poder crear la función gotoxy
+#include <windows.h>//Para poder crear la funciï¿½n gotoxy
 using namespace std;
 
 void gotoxy(int x, int y)
@@ -26,4 +26,4 @@ int main (void)
 {
     system("pause");
     return 1;
-}//Fin de la función principal
+}//Fin de la funcion principal
