@@ -1,10 +1,10 @@
 /*Program19 
-Descripcion: Programa para resolver ecuaciones de 2Do grado
-             con funciones paso por referencia
-Salas Mateos Marco Antonio
-PP18042270
-1CV18
-Periodo 18-1
+    Descripcion: Programa para resolver ecuaciones de 2Do grado
+                con funciones paso por referencia
+    Salas Mateos Marco Antonio
+    PP18042270
+    1CV18
+    Periodo 18-1
 */
 
 #include <iostream>//Para uso de cout y cin.
@@ -45,15 +45,14 @@ void Read(int &RefA, int &RefB, int &RefC)
 
 void Solve(const int &RefA, const double &RefB, const int &RefC, double &RefSol1, double &RefSol2)
 {
-    double Solu;
-    Solu = pow(RefB, 2);
-    Solu = Solu-(4*RefA*RefC);
-    Solu = sqrt(Solu);
+    RefSol1 = pow(RefB, 2);
+    RefSol1 = RefSol1-(4*RefA*RefC);
+    RefSol2 = RefSol1 = sqrt(RefSol1);
     
-    RefSol1 = -RefB+Solu;
+    RefSol1 = -RefB+RefSol1;
     RefSol1 = RefSol1/(2*RefA);
 
-    RefSol2 = -RefB-Solu;
+    RefSol2 = -RefB-RefSol2;
     RefSol2 = RefSol2/(2*RefA);
 }//Fin Solve
 

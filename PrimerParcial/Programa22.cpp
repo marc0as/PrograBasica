@@ -1,6 +1,6 @@
-/*Programa
-    Descripcion: Programa para
-
+/*Programa22
+    Descripcion: Programa para: sumar, restar, dividir y multiplicar
+                vectores
     Salas Mateos Marco Antonio
     PP18042270
     1CV18
@@ -9,18 +9,7 @@
 
 #include <iostream>//Para uso de cout y cin.
 #include <cmath>//Para el uso de M_PI el valor de Pi, pow(variable, potencia)
-#include <windows.h>//Para poder crear la funcion gotoxy
 using namespace std;
-
-void gotoxy(int x, int y)
-{
-    HANDLE hcon;
-    hcon = GetStdHandle(STD_OUTPUT_HANDLE);
-    COORD dwPos;
-    dwPos.X = x;
-    dwPos.Y = y;
-    SetConsoleCursorPosition(hcon,dwPos); 
-}
 
 int main (void)
 {

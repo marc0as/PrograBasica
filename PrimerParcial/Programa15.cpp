@@ -151,7 +151,7 @@ double CalcSeri(int N, int X)
 
     Res = X+N;
     Res = pow(Res, 2);
-    RT = Res = Res/CalcFact(1);
+    RT = Res/CalcFact(1);
     //Calculo de la primera fraccion
 
     for (int i=1; i<N; i++)

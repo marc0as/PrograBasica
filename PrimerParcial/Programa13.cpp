@@ -1,5 +1,5 @@
 /*Programa 
-Descripción: Programa para 5 casos
+Descripciï¿½n: Programa para 5 casos
              utilizando for
 Salas Mateos Marco Antonio
 PP18042270
@@ -133,4 +133,4 @@ int main (void)
     }while (Opc!=5);//Fin do-while repetir
     
     return 1;
-}//Fin de la función principal
+}//Fin de la funcion principal
