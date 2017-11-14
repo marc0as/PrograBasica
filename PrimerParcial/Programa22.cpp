@@ -62,37 +62,38 @@ void Imprimir(const int &RefOpc)
     switch(RefOpc)
     {
         case(1):
-            cout<<"A+B = ";
+            for(int i=0; i<3; i++)
+                cout<<"A[" <<i <<"] + B[" <<i <<"] = " <<Res[i] <<endl;
         break;
         case(2):
-            cout<<"A-B = ";
+            for(int i=0; i<3; i++)
+                cout<<"A[" <<i <<"] - B[" <<i <<"] = " <<Res[i] <<endl;
         break;
         case(3):
-            cout<<"A*B = ";
+            for(int i=0; i<3; i++)
+                cout<<"A[" <<i <<"] * B[" <<i <<"] = " <<Res[i] <<endl;
         break;
         case(4):
-            cout<<"A/B = ";
+            for(int i=0; i<3; i++)
+                cout<<"A[" <<i <<"] / B[" <<i <<"] = " <<Res[i] <<endl;
         break;
     }//Fin switch de impresion
-    cout<<Res <<endl <<endl;
+    cout<<endl;
 }//Fin Imprimir
 
 void Leer(const int &RefOpc, double &RefRes)
 {
-    int Num, X;
-    do{
-        system("cls");    
-        cout <<"Ingresa un valor: ";
-        cin >>Num;
-        cout <<endl <<endl;
-        if (Num<1)
-        {
-            system ("cls");
-            cout<<"ERROR!" <<endl
-                <<"Elige una opcion correcta" <<endl;            
-            system ("pause");        
-        }//Fin if del error
-    }while (Num<1);//Fin do-while del error de eleccion
+    int A[3], B[3];
+    
+    system("cls");
+    cout<<"Ingresa los valores del vector A" <<endl;
+    for(int i=0; i<3; i++)
+    {
+        cout<<"Ingresa tu elemento " <<i+1 <<": ";
+        cin>>Var[i];
+        cout<<endl;
+    }
+
 
     switch(RefOpc)
     {

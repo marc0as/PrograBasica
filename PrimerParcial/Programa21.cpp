@@ -39,9 +39,7 @@ void Leer(int Var[10])
 void Imprimir(int Var[10])
 {
     for(int i=0; i<10; i++)
-    {
         cout<<"El elemento Var[" <<i <<"] contiene: " <<Var[i] <<endl <<endl;
-    }
 
     cout<<"Y el valor mas grande es: "<<CalcMayor(Var) <<endl <<endl;
 
